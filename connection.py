@@ -1,18 +1,16 @@
 import sys
 import meshtastic.ble_interface as ble
+import io
 
-client = ble.BLEClient()
-devices = client.discover()
-i = 0
+devices = ble.BLEInterface.scan()
+i=0
 for d in devices:
-   print(f"{i}) {d}")
-   i+=1
+    print(f"{i}) {d}")
+    i+=1
 
-choice = int(input("select device by number: "))
+choice = int(input("select by number: "))
+print(devices[choice].address)
 
-chosen = devices[choice].address
-print(chosen)
-client.address=chosen
-client.connect()
-
-# print(ble.BLEClient.scan()) #docs say static method but it doesnt seem to exist when i try it
+interface = ble.BLEInterface(devices[choice].address, debugOut=io.StringIO())
+# interface.connect(devices[choice].address)
+input()
