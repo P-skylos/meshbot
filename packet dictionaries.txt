@@ -1,3 +1,4 @@
+TELEMETRY
 {
     'from': 3665149408, 
     'to': 4294967295, 
@@ -45,4 +46,44 @@
         relay_node: 224
         'fromId': '!da75bde0',
         'toId': '^all'
+}
+
+TEXT MESSAGE
+{
+    'from': 3665151000, 
+    'to': 536233199, 
+    'decoded': {
+        'portnum': 'TEXT_MESSAGE_APP', 
+        'payload': b'hi :3', 
+        'bitfield': 0, 
+        'text': 'hi :3'
+        }, 
+    'id': 944823075, 
+    'rxTime': 1758739701, 
+    'rxSnr': 6.5, 
+    'hopLimit': 7, 
+    'wantAck': True, 
+    'rxRssi': -51, 
+    'hopStart': 7, 
+    'publicKey': 'FyvMvBZ1TRRWUNsZkDPX7JTW4ZuEymOMxiTRSrsu9Bg=', 
+    'pkiEncrypted': True, 
+    'raw': 
+        from: 3665151000
+        to: 536233199
+        decoded {
+            portnum: TEXT_MESSAGE_APP
+            payload: "hi :3"
+            bitfield: 0
+        }
+        id: 944823075
+        rx_time: 1758739701
+        rx_snr: 6.5
+        hop_limit: 7
+        want_ack: true
+        rx_rssi: -51
+        hop_start: 7
+        public_key: "\027+\314\274\026uM\024VP\333\031\2203\327\354\224\326\341\233\204\312c\214\306$\321J\273.\364\030"
+        pki_encrypted: true, 
+    'fromId': '!da75c418', 
+    'toId': '!1ff644ef'
 }
