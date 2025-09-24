@@ -1,0 +1,89 @@
+TELEMETRY
+{
+    'from': 3665149408, 
+    'to': 4294967295, 
+    'decoded': {
+        'portnum': 'TELEMETRY_APP',
+        'payload': b'\r*\x02\x11\x00\x12\x13\x08e\x15L7\xc9@\x1d\xb8\x1ee?%\x08et<(B',
+        'bitfield': 1,
+        'telemetry': {
+            'time': 1114666,
+            'deviceMetrics': {
+                'batteryLevel': 101,
+                'voltage': 6.288,
+                'channelUtilization': 0.895,
+                'airUtilTx': 0.014916666,
+                'uptimeSeconds': 66
+            },
+            'raw': 
+                time: 1114666
+                device_metrics {
+                    battery_level: 101,
+                    voltage: 6.288000106811523,
+                    channel_utilization: 0.8949999809265137,
+                    air_util_tx: 0.014916665852069855,
+                    uptime_seconds: 66
+                }
+        }
+    },
+    'id': 4039850763,
+    'hopLimit': 5, 
+    'priority': 'BACKGROUND',
+    'hopStart': 5,
+    'relayNode': 224,
+    'raw': 
+        from: 3665149408
+        to: 4294967295
+        decoded {
+            portnum: TELEMETRY_APP
+            payload: "\r*\002\021\000\022\023\010e\025L7\311@\035\270\036e?%\010et<(B"
+            bitfield: 1
+        }
+        id: 4039850763
+        hop_limit: 5
+        priority: BACKGROUND
+        hop_start: 5
+        relay_node: 224
+        'fromId': '!da75bde0',
+        'toId': '^all'
+}
+
+TEXT MESSAGE
+{
+    'from': 3665151000, 
+    'to': 536233199, 
+    'decoded': {
+        'portnum': 'TEXT_MESSAGE_APP', 
+        'payload': b'hi :3', 
+        'bitfield': 0, 
+        'text': 'hi :3'
+        }, 
+    'id': 944823075, 
+    'rxTime': 1758739701, 
+    'rxSnr': 6.5, 
+    'hopLimit': 7, 
+    'wantAck': True, 
+    'rxRssi': -51, 
+    'hopStart': 7, 
+    'publicKey': 'FyvMvBZ1TRRWUNsZkDPX7JTW4ZuEymOMxiTRSrsu9Bg=', 
+    'pkiEncrypted': True, 
+    'raw': 
+        from: 3665151000
+        to: 536233199
+        decoded {
+            portnum: TEXT_MESSAGE_APP
+            payload: "hi :3"
+            bitfield: 0
+        }
+        id: 944823075
+        rx_time: 1758739701
+        rx_snr: 6.5
+        hop_limit: 7
+        want_ack: true
+        rx_rssi: -51
+        hop_start: 7
+        public_key: "\027+\314\274\026uM\024VP\333\031\2203\327\354\224\326\341\233\204\312c\214\306$\321J\273.\364\030"
+        pki_encrypted: true, 
+    'fromId': '!da75c418', 
+    'toId': '!1ff644ef'
+}
