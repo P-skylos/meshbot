@@ -1,5 +1,5 @@
 PREFIX = "!"
 
-commands = {
+rules = {
     "echo (.*)": (lambda x: x[0]),
 }
