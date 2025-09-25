@@ -1,6 +1,9 @@
 # vision
 This is a small python script that filters incoming messages for ones with a command prefix, interprets those commands, and then sends the required response. For example it might receive the message `!temp 2000` and send back `the local forecast is a high of 65 fahrenheit for 20:00`.
 
+# status
+This bot is in its proof of concept stage. Once error handling is added I would consider it a minimum viable product. After that, it's refining usability.
+
 # Structure
 `bot.py` contains the connection and bot logic 
 `command_parse.py` contains the parsing logic
@@ -39,5 +42,7 @@ note that when matching groups, only the last matched substring is recorded. for
 - do we want to pass on metadata also?
 - add guidance to commands.py
 - add common issues to the how to use section
+- add testing
+- add error handling
 
 
