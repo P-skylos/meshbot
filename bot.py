@@ -18,3 +18,6 @@ def onReceiveText(packet, interface):
 
 pub.subscribe(onReceiveText, "meshtastic.receive.text") #tell the bus to use our callback whenever a packet is received
 
+#keep the process alive so our call back can do its business
+while True: 
+    continue
