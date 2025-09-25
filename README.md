@@ -36,8 +36,7 @@ To learn more about python regex and capture groups, you can start [here](https:
 note that when matching groups, only the last matched substring is recorded. for this reason its not recommended to use repeating capture groups.
 
 
-# To-do's
-- we need to figure out how to keep the script listening since the listeners are asynchronous and the script just reaches end of execution otherwise.
+# To-do's.
 - we need to make sure the bot responds on the same channel it was messaged on
 - do we want to pass on metadata also?
 - add guidance to commands.py
